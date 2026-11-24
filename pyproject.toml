@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llm-ledger"
+version = "0.1.0"
+description = "Lightweight, local-first proxy and CLI tracking real-time LLM token usage, latency, and exact USD cost."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "llm-ledger contributors" }
+]
+keywords = [
+    "llm",
+    "openai",
+    "anthropic",
+    "gemini",
+    "proxy",
+    "cost-tracking",
+    "cli"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "starlette>=0.36.0",
+    "uvicorn>=0.27.0",
+    "httpx>=0.27.0",
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "respx>=0.21.0",
+]
+
+[project.scripts]
+llm-ledger = "llm_ledger.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/YOUR_GITHUB_USERNAME/llm-ledger"
+Repository = "https://github.com/YOUR_GITHUB_USERNAME/llm-ledger"
+Issues = "https://github.com/YOUR_GITHUB_USERNAME/llm-ledger/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llm_ledger"]
