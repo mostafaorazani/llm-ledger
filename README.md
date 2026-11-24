@@ -1,11 +1,25 @@
 # llm-ledger
 
-[![PyPI version](https://img.shields.io/pypi/v/llm-ledger.svg)](https://pypi.org/project/llm-ledger/)
+[![PyPI version](https://img.shields.io/pypi/v/llm-ledger-cli.svg)](https://pypi.org/project/llm-ledger-cli/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![CI](https://github.com/YOUR_GITHUB_USERNAME/llm-ledger/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/llm-ledger/actions)
+[![CI](https://github.com/mostafaorazani/llm-ledger/actions/workflows/ci.yml/badge.svg)](https://github.com/mostafaorazani/llm-ledger/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A lightweight, local-first HTTP proxy and CLI that tracks real-time token counts, request latency, and exact USD costs across OpenAI, Anthropic, Gemini, and OpenRouter at the project level.
+
+---
+
+## Installation
+
+Run directly without installing via `uvx`:
+```bash
+uvx --from llm-ledger-cli llm-ledger --help
+```
+
+Or install via `pip`:
+```bash
+pip install llm-ledger-cli
+```
 
 ---
 
@@ -13,7 +27,7 @@ A lightweight, local-first HTTP proxy and CLI that tracks real-time token counts
 
 ```bash
 # 1. Start the proxy (zero-install with uvx)
-uvx llm-ledger start
+uvx --from llm-ledger-cli llm-ledger start
 
 # 2. Update your SDK base URL (append /p/<project-name> to track per project)
 # OpenAI:     http://localhost:8787/openai/v1      or  http://localhost:8787/p/my-app/openai/v1

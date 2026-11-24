@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "llm-ledger"
+name = "llm-ledger-cli"
 version = "0.1.0"
 description = "Lightweight, local-first proxy and CLI tracking real-time LLM token usage, latency, and exact USD cost."
 readme = "README.md"
@@ -53,9 +53,9 @@ dev = [
 llm-ledger = "llm_ledger.cli:app"
 
 [project.urls]
-Homepage = "https://github.com/YOUR_GITHUB_USERNAME/llm-ledger"
-Repository = "https://github.com/YOUR_GITHUB_USERNAME/llm-ledger"
-Issues = "https://github.com/YOUR_GITHUB_USERNAME/llm-ledger/issues"
+Homepage = "https://github.com/mostafaorazani/llm-ledger"
+Repository = "https://github.com/mostafaorazani/llm-ledger"
+Issues = "https://github.com/mostafaorazani/llm-ledger/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/llm_ledger"]
