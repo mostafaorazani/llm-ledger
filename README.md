@@ -5,6 +5,8 @@
 [![CI](https://github.com/mostafaorazani/llm-ledger/actions/workflows/ci.yml/badge.svg)](https://github.com/mostafaorazani/llm-ledger/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![llm-ledger demo](assets/demo.gif)
+
 A lightweight, local-first HTTP proxy and CLI that tracks real-time token counts, request latency, and exact USD costs across OpenAI, Anthropic, Gemini, and OpenRouter at the project level.
 
 ---
